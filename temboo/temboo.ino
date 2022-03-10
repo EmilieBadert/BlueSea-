@@ -52,11 +52,11 @@ void loop() {
     SendSMSChoreo.setAppKey(TEMBOO_APP_KEY);
     
     // Set Choreo inputs
-    SendSMSChoreo.addInput("AuthToken", "*******************************"); //  AUTH TOKEN 
+    SendSMSChoreo.addInput("AuthToken", "773ad8744b34b175ad54281a947a43ee"); //  AUTH TOKEN 
     SendSMSChoreo.addInput("To", "+33622540432"); // cell number that your want the text to go to 
     SendSMSChoreo.addInput("From", "+1**********"); // Twilio phone number 
     SendSMSChoreo.addInput("Body", "Le filet est plein. Il est temps d'aller le vider!"); // Message
-    SendSMSChoreo.addInput("AccountSID", "*********************************"); // Account SID
+    SendSMSChoreo.addInput("AccountSID", "AC15ddf04d6e25aac38a9c156d88d8339a"); // Account SID
     
     // Identify the Choreo to run
     SendSMSChoreo.setChoreo("/Library/Twilio/SMSMessages/SendSMS");
